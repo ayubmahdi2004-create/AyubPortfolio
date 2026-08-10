@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ayub Mahdi — UI/UX Designer</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="brand"><strong>Ayub Mahdi</strong><span>UI/UX Designer</span></div>
+  <nav class="site-nav">
+    <a href="index.html" class="active">Home</a>
+    <button type="button" data-open-resume>Resume</button>
+    <span class="signature">
+      <svg viewBox="0 0 24 24"><path d="M12 2l2.9 7.1L22 12l-7.1 2.9L12 22l-2.9-7.1L2 12l7.1-2.9L12 2z"/></svg>
+      Ayub M
+    </span>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>I'm Ayub, a UI/UX designer who designs intentionally and creates ambitious digital experiences.</h1>
+  <div class="exp-table">
+    <table>
+      <tr><td>2026</td><td>Shift</td><td>Figma Plugin &amp; Design System</td></tr>
+      <tr><td>2026</td><td>StepOut</td><td>Mobile Product Design</td></tr>
+      <tr><td>2026</td><td>Visual Graphics</td><td>Marketing &amp; Motion Graphics</td></tr>
+      <tr><td>2026</td><td>Art &amp; 3D Showcase</td><td>Digital Art &amp; Physical Models</td></tr>
+    </table>
+  </div>
+</section>
+
+<div class="project-grid">
+
+  <a class="project-card" href="shift.html" data-cursor-text="View Case Study">
+    <div class="project-card__media">
+      <img class="is-base" src="CASE STUDY 1 CONTENT/C1.png" alt="SHIFT — Figma plugin and design system cover">
+      <video class="is-hover" src="CASE STUDY 1 CONTENT/C4.mp4" muted loop playsinline preload="none"></video>
+    </div>
+    <div class="project-card__meta">
+      <h3>SHIFT</h3>
+      <span class="tag">Figma Plugin &amp; Design System</span>
+    </div>
+  </a>
+
+  <a class="project-card" href="stepout.html" data-cursor-text="View Case Study">
+    <div class="project-card__media">
+      <img class="is-base" src="CASE STUDY 2 CONTENT/S1.png" alt="StepOut — mobile product design cover">
+    </div>
+    <div class="project-card__meta">
+      <h3>StepOut</h3>
+      <span class="tag">Mobile Product Design</span>
+    </div>
+  </a>
+
+  <a class="project-card" href="graphics.html" data-cursor-text="View Gallery">
+    <div class="project-card__media">
+      <video class="is-base" src="Graphics/G1.mp4" autoplay muted loop playsinline data-always-loop></video>
+    </div>
+    <div class="project-card__meta">
+      <h3>Visual Graphics</h3>
+      <span class="tag">Marketing &amp; Motion Graphics</span>
+    </div>
+  </a>
+
+  <a class="project-card" href="art.html" data-cursor-text="View Gallery">
+    <div class="project-card__media">
+      <img class="is-base" src="ART/1.png" alt="Art &amp; 3D Showcase cover">
+      <video class="is-hover" src="ART/30.mov" muted loop playsinline preload="none"></video>
+    </div>
+    <div class="project-card__meta">
+      <h3>Art &amp; 3D Showcase</h3>
+      <span class="tag">Digital Art &amp; Physical Models</span>
+    </div>
+  </a>
+
+</div>
+
+<footer class="site-footer">
+  <span>Designed &amp; made by Ayub</span>
+  <span class="links">
+    <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="mailto:hello@ayubmahdi.com">Email</a>
+  </span>
+</footer>
+
+<div class="modal-overlay" data-pdf-src="RESUME.pdf">
+  <div class="modal-box">
+    <button class="modal-close" type="button" aria-label="Close">&times;</button>
+    <iframe title="Resume"></iframe>
+  </div>
+</div>
+
+<script src="js/cursor.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

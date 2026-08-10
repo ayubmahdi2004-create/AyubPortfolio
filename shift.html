@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SHIFT — Figma Plugin &amp; Design System | Ayub Mahdi</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="brand"><strong>Ayub Mahdi</strong><span>UI/UX Designer</span></div>
+  <nav class="site-nav">
+    <a href="index.html">Home</a>
+    <button type="button" data-open-resume>Resume</button>
+    <span class="signature">
+      <svg viewBox="0 0 24 24"><path d="M12 2l2.9 7.1L22 12l-7.1 2.9L12 22l-2.9-7.1L2 12l7.1-2.9L12 2z"/></svg>
+      Ayub M
+    </span>
+  </nav>
+</header>
+
+<div class="cs-topbar"><a href="index.html">&larr; Back</a> &nbsp;&nbsp; FIGMA X DEVELOPMENT &middot; CONCEPT 2026</div>
+
+<div class="cs-layout">
+  <aside class="cs-sidebar">
+    <a href="index.html" class="cs-sidebar__back">&larr; Back</a>
+    <a href="#overview">Overview</a>
+    <a href="#solution">Solution</a>
+    <a href="#core-flows">Core Flows</a>
+    <a href="#system-architecture">System Architecture</a>
+    <a href="#playtest-feedback">Playtest Feedback</a>
+    <a href="#reflection">Reflection</a>
+  </aside>
+
+  <main class="cs-content">
+    <h1 class="cs-hero-title">Streamlining Design-to-Code</h1>
+    <div class="cs-hero-media"><img src="CASE STUDY 1 CONTENT/C1.png" alt="SHIFT hero — Figma to code mockups"></div>
+
+    <dl class="cs-meta">
+      <div><dt>Role</dt><dd>Product Design &amp; Workflow Lead</dd></div>
+      <div><dt>Timeline</dt><dd>Aug 2025 &ndash; Aug 2025</dd></div>
+      <div><dt>Team</dt><dd>1 Designer</dd></div>
+      <div><dt>Skills</dt><dd>Workflow Design, System Mapping, Developer Handoff</dd></div>
+    </dl>
+
+    <!-- ===================== OVERVIEW ===================== -->
+    <section id="overview" class="cs-section">
+      <p class="cs-section__label">Overview</p>
+      <h2>How do we eliminate the tedious process of having developers recreate designs?</h2>
+      <p>My goal was to incorporate a tool that would make handing off designs to developers easier, faster, and far more accurate &mdash; without asking either side to change how they already work.</p>
+
+      <div class="cs-triple">
+        <div><h4>Product Strategy</h4><p>Define a workflow tool that removes the manual translation step between Figma and code.</p></div>
+        <div><h4>Prototyping &amp; Testing</h4><p>Create a working prototype and validate the workflow with real developer teams.</p></div>
+        <div><h4>Iterating with Feedback</h4><p>Refine the tool based on developer input, focusing on speed and generated-code accuracy.</p></div>
+      </div>
+
+      <p class="cs-section__label" style="margin-top:40px;">Problem</p>
+      <h2>The handoff is a bottleneck</h2>
+      <p>Designs are painstakingly polished in Figma, then recreated line by line in code &mdash; a process that introduces drift between the intended design and what actually ships.</p>
+
+      <figure class="media-figure">
+        <img src="CASE STUDY 1 CONTENT/C2.png" alt="Current design-to-development handoff process diagram">
+        <figcaption>Current process &mdash; 1. Understand, 2. Handoff, 3. Reconstruct</figcaption>
+      </figure>
+      <p>Developers recreate the same spacing, color, and typesetting decisions that were already finalized in Figma. This overhead adds days to every handoff cycle and leaves plenty of room for pixel drift between what's designed and what ships.</p>
+
+      <p class="cs-section__label" style="margin-top:40px;">Opportunity</p>
+      <h2>Creating Effective Workflow Overlays</h2>
+      <p>Existing handoff tools focus on either standard code generation or automatic asset export, leaving a gap for a tool that respects both design intent and developer conventions.</p>
+      <p>By designing a workflow that lives directly inside Figma as a plugin, a developer can pull structured, production-aware code without ever leaving the design file, removing translation from the equation entirely.</p>
+
+      <div class="cs-triple">
+        <div><h4>Design</h4><p>A Figma plugin that integrates directly into the designer's existing workflow, applying structural tags without altering the design.</p></div>
+        <div><h4>Package</h4><p>Automatically organizes tokens, components, and design intent into a developer-ready package.</p></div>
+        <div><h4>Develop</h4><p>Exports structured, production-ready code that maps 1:1 to Figma components, reducing manual re-implementation.</p></div>
+      </div>
+    </section>
+
+    <!-- ===================== SOLUTION ===================== -->
+    <section id="solution" class="cs-section">
+      <p class="cs-section__label">Solution</p>
+      <h2>Shift: the Figma extension that bridges the gap between design and development.</h2>
+      <p>Implemented as a Figma plugin, SHIFT parses Figma-generated design specs into structured, developer-ready code.</p>
+
+      <figure class="media-figure" style="max-width:260px;">
+        <img src="CASE STUDY 1 CONTENT/C3.png" alt="SHIFT logo">
+      </figure>
+
+      <h2>Eliminate handoff friction by converting Figma specs into clean, production-ready code.</h2>
+      <p>SHIFT is a lightweight plugin that extends the extraction of tokens, layout, and component structure straight from Figma, so developers can spend their time building the product rather than rebuilding the design.</p>
+
+      <div class="media-figure">
+        <video src="CASE STUDY 1 CONTENT/C4.mp4" autoplay muted loop playsinline style="width:100%;border-radius:6px;"></video>
+      </div>
+    </section>
+
+    <!-- ===================== CORE FLOWS ===================== -->
+    <section id="core-flows" class="cs-section">
+      <p class="cs-section__label">Core Flow</p>
+
+      <div class="media-row cols-3">
+        <div class="media-box-wrap">
+          <div class="media-box"><video src="CASE STUDY 1 CONTENT/C5.mp4" autoplay muted loop playsinline></video></div>
+          <div class="media-box__caption">Automated Token Extraction &mdash; instantly isolate color, typography, and spacing variables into standardized JSON tokens.</div>
+        </div>
+        <div class="media-box-wrap">
+          <div class="media-box landscape"><video src="CASE STUDY 1 CONTENT/C6.mp4" autoplay muted loop playsinline></video></div>
+          <div class="media-box__caption">Component &amp; Variant Mapping &mdash; translates Figma component variants directly into reusable code components.</div>
+        </div>
+        <div class="media-box-wrap">
+          <div class="media-box"><video src="CASE STUDY 1 CONTENT/C7.mp4" autoplay muted loop playsinline></video></div>
+          <div class="media-box__caption">Direct VS Code Handoff &mdash; push structured code straight into your local editor with a single export.</div>
+        </div>
+      </div>
+
+      <h2 style="margin-top:40px;">Connecting SHIFT to Your Workspace</h2>
+      <p>Designing an effortless setup flow that connects Figma directly to local developer environments.</p>
+      <figure class="media-figure">
+        <img src="CASE STUDY 1 CONTENT/C8.png" alt="Connecting SHIFT to your workspace — setup screens">
+      </figure>
+
+      <p class="cs-section__label" style="margin-top:40px;">Research</p>
+      <h2>Researching the design handoff landscape and developer workflows</h2>
+      <p>I studied existing handoff tools, prototyping in Figma, Figma Make, tools dictionary tools and permanent handoff friction to sketch the best possible workflow.</p>
+      <figure class="media-figure">
+        <img src="CASE STUDY 1 CONTENT/C9.png" alt="Research on existing handoff tools and industry processes">
+        <figcaption>Research and existing tools &amp; industry processes</figcaption>
+      </figure>
+
+      <p class="cs-section__label" style="margin-top:40px;">Exploring, Prototyping</p>
+      <h2>Exploring plugin structure and extraction logic</h2>
+      <p>Structured plugin architecture to make token parsing, asset cataloging, and code mapping seamless within a native Figma workflow.</p>
+      <div class="cs-triple">
+        <div><h4>Design Tokens</h4><p>Extracts colors, type, and spacing sourced directly from Figma styles, JSON-normalized.</p></div>
+        <div><h4>Component Mapping</h4><p>Translates variant properties and states into component variant logic developers already use.</p></div>
+        <div><h4>Direct Export</h4><p>Generates production-ready code snippets that push straight to your local IDE workspace.</p></div>
+      </div>
+      <figure class="media-figure">
+        <img src="CASE STUDY 1 CONTENT/C10.png" alt="Design system extraction inputs diagram">
+        <figcaption>Design system extraction inputs</figcaption>
+      </figure>
+
+      <p class="cs-section__label" style="margin-top:40px;">Key Benefits</p>
+      <div class="cs-triple">
+        <div><h4>Native Integration</h4><p>Operates directly inside Figma without requiring any additional apps or tools.</p></div>
+        <div><h4>Framework Agnostic</h4><p>Generates clean, framework-ready code that adapts to your team's stack.</p></div>
+        <div><h4>Zero-Friction Handoff</h4><p>Connects directly to local IDE workspaces for a single-click handoff.</p></div>
+      </div>
+      <figure class="media-figure">
+        <img src="CASE STUDY 1 CONTENT/C11.png" alt="Native integration, framework agnostic, and zero-friction handoff previews">
+      </figure>
+    </section>
+
+    <!-- ===================== SYSTEM ARCHITECTURE ===================== -->
+    <section id="system-architecture" class="cs-section">
+      <p class="cs-section__label">Visual Style &amp; UI Direction</p>
+      <h2>Iterating on brand identity and modal structure</h2>
+      <p>I explored several structural and visual directions before settling on the layout and identity that best represented SHIFT's product speed and precision.</p>
+
+      <h4 style="margin:26px 0 4px;">Brand &amp; Motion Exploration</h4>
+      <p style="margin-bottom:10px;">Testing UI panel structure and motion to communicate a fast, confident handoff experience.</p>
+      <div class="media-row cols-2">
+        <div class="media-box landscape"><video src="CASE STUDY 1 CONTENT/C12.mp4" autoplay muted loop playsinline></video></div>
+        <div class="media-box landscape"><video src="CASE STUDY 1 CONTENT/C13.mov" autoplay muted loop playsinline></video></div>
+      </div>
+
+      <h4 style="margin:26px 0 4px;">Visual Identity Refinement</h4>
+      <p style="margin-bottom:10px;">Refining the logomark and physical brand presence to feel precise and engineered.</p>
+      <div class="media-row cols-2">
+        <div class="media-box landscape"><img src="CASE STUDY 1 CONTENT/C14.png" alt="Visual identity refinement study 1"></div>
+        <div class="media-box landscape"><img src="CASE STUDY 1 CONTENT/C15.png" alt="Visual identity refinement — final logo"></div>
+      </div>
+
+      <h4 style="margin:26px 0 4px;">Layout &amp; Wireframing</h4>
+      <p style="margin-bottom:10px;">Moving from paper sketches through mid-fidelity Figma wireframes to lock the final plugin layout.</p>
+      <div class="media-row cols-2">
+        <div class="media-box"><img src="CASE STUDY 1 CONTENT/C16.png" alt="Paper sketches"></div>
+        <div class="media-box"><img src="CASE STUDY 1 CONTENT/C17.png" alt="Low-fidelity wireframe"></div>
+      </div>
+
+      <p class="cs-section__label" style="margin-top:40px;">Design Decision</p>
+      <h2>Mapping a seamless extraction pipeline from Figma to code</h2>
+      <p>An extraction pipeline that reads Figma's structural metadata and translates it into normalized tokens, components, and export-ready code &mdash; without any manual reformatting.</p>
+      <figure class="media-figure">
+        <img src="CASE STUDY 1 CONTENT/C18.png" alt="Design-to-code extraction pipeline diagram">
+      </figure>
+    </section>
+
+    <!-- ===================== PLAYTEST FEEDBACK ===================== -->
+    <section id="playtest-feedback" class="cs-section">
+      <p class="cs-section__label">Trade-offs</p>
+      <h2>Balancing speed with code precision</h2>
+      <p>Early feedback from developer playtests showed a clear tension: exporting instantly felt great, but only if the resulting code was actually usable. Fast, sloppy exports created more cleanup work than they saved.</p>
+      <figure class="media-figure" style="max-width:520px;">
+        <img src="CASE STUDY 1 CONTENT/C19.png" alt="Balancing extraction speed against code precision">
+      </figure>
+      <p>This trade-off ensures that generated code is actually production-ready, rather than unmaintainable design markup.</p>
+    </section>
+
+    <!-- ===================== REFLECTION ===================== -->
+    <section id="reflection" class="cs-section">
+      <p class="cs-section__label">What I Learned</p>
+      <h2>Reflection</h2>
+      <div class="cs-triple" style="grid-template-columns:1fr 1fr;">
+        <div><h4>Design systems require developer empathy</h4><p>Building a good handoff tool means designing for someone else's workflow, not just your own.</p></div>
+        <div><h4>Think in end-to-end workflows</h4><p>SHIFT taught me that great design tools disappear into someone's process rather than adding a new step to it.</p></div>
+      </div>
+    </section>
+  </main>
+</div>
+
+<footer class="site-footer">
+  <span>Designed &amp; made by Ayub</span>
+  <span class="links">
+    <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="mailto:hello@ayubmahdi.com">Email</a>
+  </span>
+</footer>
+
+<div class="modal-overlay" data-pdf-src="RESUME.pdf">
+  <div class="modal-box">
+    <button class="modal-close" type="button" aria-label="Close">&times;</button>
+    <iframe title="Resume"></iframe>
+  </div>
+</div>
+
+<script src="js/cursor.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

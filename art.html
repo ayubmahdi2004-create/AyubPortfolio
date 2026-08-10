@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Art &amp; 3D Showcase | Ayub Mahdi</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="brand"><strong>Ayub Mahdi</strong><span>UI/UX Designer</span></div>
+  <nav class="site-nav">
+    <a href="index.html">Home</a>
+    <button type="button" data-open-resume>Resume</button>
+    <span class="signature">
+      <svg viewBox="0 0 24 24"><path d="M12 2l2.9 7.1L22 12l-7.1 2.9L12 22l-2.9-7.1L2 12l7.1-2.9L12 2z"/></svg>
+      Ayub M
+    </span>
+  </nav>
+</header>
+
+<div class="cs-topbar"><a href="index.html">&larr; Back</a> &nbsp;&nbsp; DIGITAL ART &amp; PHYSICAL MODELS</div>
+
+<div class="gallery-head">
+  <p class="eyebrow">Personal Work</p>
+  <h1>Art &amp; 3D Showcase</h1>
+</div>
+
+<div class="gallery-grid" id="art-grid"></div>
+
+<footer class="site-footer">
+  <span>Designed &amp; made by Ayub</span>
+  <span class="links">
+    <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="mailto:hello@ayubmahdi.com">Email</a>
+  </span>
+</footer>
+
+<div class="modal-overlay" data-pdf-src="RESUME.pdf">
+  <div class="modal-box">
+    <button class="modal-close" type="button" aria-label="Close">&times;</button>
+    <iframe title="Resume"></iframe>
+  </div>
+</div>
+
+<script>
+  /* Files 1-29 are images, plus video files at their noted numbers,
+     matching the ART folder exactly (see manifest in CLAUDE_NOTES_FOR_PORTFOLIO.pdf).
+     If your final export differs, just edit the extensions map below. */
+  var videoExt = { 7: 'mov', 8: 'mp4', 9: 'mp4', 10: 'mp4', 11: 'mp4', 17: 'mp4', 30: 'mov' };
+  var grid = document.getElementById('art-grid');
+  for (var i = 1; i <= 30; i++) {
+    var tile = document.createElement('div');
+    tile.className = 'tile';
+    if (videoExt[i]) {
+      var v = document.createElement('video');
+      v.src = 'ART/' + i + '.' + videoExt[i];
+      v.autoplay = true; v.muted = true; v.loop = true; v.playsInline = true;
+      tile.appendChild(v);
+    } else {
+      var img = document.createElement('img');
+      img.src = 'ART/' + i + '.png';
+      img.alt = 'Art piece ' + i;
+      img.loading = 'lazy';
+      tile.appendChild(img);
+    }
+    grid.appendChild(tile);
+  }
+</script>
+
+<script src="js/cursor.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
